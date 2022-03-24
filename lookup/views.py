@@ -4,7 +4,8 @@ def home(request):
 	import json
 	import requests
 
-	api_request = requests.get("https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=64118&distance=25&API_KEY=02230735-351B-41BE-A658-6F615745AC69")
+	#api_request = requests.get("https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=64118&distance=25&API_KEY=02230735-351B-41BE-A658-6F615745AC69")
+	api_request = requests.get("https://www.airnowapi.org/aq/observation/zipCode/current/?format=application/json&zipCode=77010&distance=100&API_KEY=02230735-351B-41BE-A658-6F615745AC69")
 
 	try:
 		api = json.loads(api_request.content)
